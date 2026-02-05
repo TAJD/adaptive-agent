@@ -1,0 +1,9 @@
+{
+  "count": 41,
+  "tasks": [
+    "challenge_null_safe_sum",
+    "challenge_exclude_nulls_avg",
+    "challenge_active_products_only",
+    "challenge_net_sales"
+  ]
+}

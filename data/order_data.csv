@@ -1,0 +1,11 @@
+Order_ID,Customer_ID,Product,Quantity,Unit_Price,Order_Date,Region
+1001,C001,Laptop A,2,1500,2024-01-15,North
+1002,C002,Phone X,1,1200,2024-01-16,South
+1003,C003,Tablet Z,3,400,2024-01-17,East
+1004,C001,Monitor Pro,1,600,2024-01-18,North
+1005,C004,Keyboard Q,5,50,2024-01-19,West
+1006,C005,Mouse R,10,25,2024-01-20,West
+1007,C002,Headphones S,2,120,2024-01-21,South
+1008,C006,Laptop B,1,1300,2024-01-22,North
+1009,C007,Phone Y,2,1050,2024-01-23,East
+1010,C003,Monitor Pro,2,600,2024-01-24,East

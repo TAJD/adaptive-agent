@@ -1,0 +1,24 @@
+{
+  "query": "Which region had the highest total sales in 2024? Return the region name and total sales amount. (data in 'sales_data.csv')",
+  "failed_code": "import pandas as pd\n\n# Read the sales data\ndf = pd.read_csv('sales_data.csv')\n\n# Filter data for 2024\n# Handle different possible date column names and formats\ndate_column = None\nfor col in df.columns:\n    if 'date' in col.lower() or 'year' in col.lower():\n        date_column = col\n        break\n\nif date_column:\n    # Convert to datetime if needed\n    if df[date_column].dtype == 'object':\n        df[date_column] = pd.to_datetime(df[date_column], errors='coerce')\n    \n    # Filter for 2024\n    df_2024 = df[df[date_column].dt.year == 2024]\nelse:\n    # If no date column found, check if there's a 'year' column\n    if 'year' in df.columns:\n        df_2024 = df[df['year'] == 2024]\n    elif 'Year' in df.columns:\n        df_2024 = df[df['Year'] == 2024]\n    else:\n        df_2024 = df\n\n# Find region column\nregion_column = None\nfor col in df_2024.columns:\n    if 'region' in col.lower():\n        region_column = col\n        break\n\n# Find sales column\nsales_column = None\nfor col in df_2024.columns:\n    if 'sales' in col.lower() or 'amount' in col.lower():\n        sales_column = col\n        break\n\n# Group by region and sum sales\nif region_column and sales_column:\n    region_sales = df_2024.groupby(region_column)[sales_column].sum()\n    \n    # Find region with highest sales\n    max_region = region_sales.idxmax()\n    max_sales = region_sales.max()\n    \n    result = {'region': max_region, 'total_sales': max_sales}\nelse:\n    result = None",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "2024",
+    "total",
+    "highest"
+  ],
+  "task_id": "regional_sales_ranking",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

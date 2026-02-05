@@ -1,0 +1,24 @@
+{
+  "query": "Calculate the net annual sales (sum of all quarters minus returns) for 'Service A'. Note: if returns is missing, treat as 0. Return as integer.",
+  "failed_code": "import pandas as pd\n\n# Create sample data based on typical business structure\ndata = {\n    'Service': ['Service A', 'Service A', 'Service A', 'Service A', 'Service B', 'Service B'],\n    'Quarter': ['Q1', 'Q2', 'Q3', 'Q4', 'Q1', 'Q2'],\n    'Sales': [25000.5, 30000.75, 28500.25, 32000.5, 15000, 18000],\n    'Returns': [1000.25, 1500.5, 800.0, None, 500, 750]\n}\n\ndf = pd.DataFrame(data)\n\n# Filter for Service A only\nservice_a = df[df['Service'] == 'Service A']\n\n# Calculate total sales for Service A\ntotal_sales = service_a['Sales'].sum()\n\n# Calculate total returns, treating NaN as 0\ntotal_returns = service_a['Returns'].fillna(0).sum()\n\n# Calculate net annual sales\nnet_sales = total_sales - total_returns\n\n# Convert to integer\nresult = int(round(net_sales))\n\nprint(f\"Total Sales: {total_sales}\")\nprint(f\"Total Returns: {total_returns}\")\nprint(f\"Net Annual Sales: {result}\")",
+  "error_message": "Expected 230000, got 112201. Numeric value is very different. Hints: Check your calculation logic and verify all filters are correct; Query mentions time period - ensure you filter by Fiscal Year and/or Fiscal Quarter",
+  "fixed_code": null,
+  "error_type": "large_numeric_error",
+  "keywords": [
+    "sales",
+    "quarter",
+    "sum",
+    "min"
+  ],
+  "task_id": "challenge_net_sales",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

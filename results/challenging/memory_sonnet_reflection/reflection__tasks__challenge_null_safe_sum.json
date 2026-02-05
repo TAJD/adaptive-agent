@@ -1,0 +1,10 @@
+{
+  "learnings": [
+    "Ensure the code produces output.",
+    "Check units and scale of values.",
+    "Fundamentally reconsider the approach.",
+    "Score unchanged - try a different approach.",
+    "Repeated error: no_output. Fundamental change needed.",
+    "Check that 'result' variable is set."
+  ]
+}

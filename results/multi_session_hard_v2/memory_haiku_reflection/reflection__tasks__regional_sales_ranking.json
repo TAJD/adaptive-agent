@@ -1,0 +1,9 @@
+{
+  "learnings": [
+    "Check the expected output type.",
+    "Repeated error: sequence_partial_match. Fundamental change needed.",
+    "Ensure numeric results are numbers, not strings.",
+    "Review the approach and try again.",
+    "Score unchanged - try a different approach."
+  ]
+}

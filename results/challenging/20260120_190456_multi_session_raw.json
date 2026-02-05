@@ -1,0 +1,1235 @@
+{
+  "timestamp": "20260120_190456",
+  "config": {
+    "models": [
+      "haiku",
+      "sonnet"
+    ],
+    "strategies": [
+      "none",
+      "reflection",
+      "episodic"
+    ],
+    "num_sessions": 5,
+    "num_tasks": 5,
+    "max_attempts": 3
+  },
+  "results": {
+    "haiku": {
+      "none": {
+        "1": {
+          "pass_rate": 0.2,
+          "avg_attempts": 2.8,
+          "avg_score": 0.48,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.4,
+          "avg_attempts": 2.4,
+          "avg_score": 0.5,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "reflection": {
+        "1": {
+          "pass_rate": 0.8,
+          "avg_attempts": 2.2,
+          "avg_score": 0.9800000000000001,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.4,
+          "avg_attempts": 2.8,
+          "avg_score": 0.78,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": true,
+              "attempts": 3,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.6,
+          "avg_attempts": 2.6,
+          "avg_score": 0.78,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": true,
+              "attempts": 3,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.8,
+          "avg_attempts": 2.2,
+          "avg_score": 0.9800000000000001,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.8,
+          "avg_attempts": 2.4,
+          "avg_score": 0.9800000000000001,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 3,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "episodic": {
+        "1": {
+          "pass_rate": 0.2,
+          "avg_attempts": 2.6,
+          "avg_score": 0.58,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.48,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.4,
+          "avg_attempts": 2.2,
+          "avg_score": 0.6,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.2,
+          "avg_attempts": 3.0,
+          "avg_score": 0.6799999999999999,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 3,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.9
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.2,
+          "avg_attempts": 2.8,
+          "avg_score": 0.4,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": true,
+              "attempts": 2,
+              "score": 1.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        }
+      }
+    },
+    "sonnet": {
+      "none": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "reflection": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "episodic": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 5,
+          "episodes_created": 5
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.1,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.5
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "challenge_null_safe_sum",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_growth_with_zero",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_exclude_nulls_avg",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_active_products_only",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "challenge_net_sales",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 5,
+          "episodes_at_end": 5,
+          "episodes_created": 0
+        }
+      }
+    }
+  }
+}

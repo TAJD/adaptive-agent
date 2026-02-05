@@ -1,0 +1,24 @@
+{
+  "query": "What is the average Q3 sales across all products? Exclude products with missing Q3 values. Return as float rounded to 1 decimal place.",
+  "failed_code": "import pandas as pd\n\n# Read the data\ndf = pd.read_csv('data.csv')\n\n# Filter out rows with missing Q3 values\ndf_filtered = df[df['Q3'].notna()]\n\n# Calculate the average Q3 sales\nif len(df_filtered) > 0:\n    result = round(df_filtered['Q3'].mean(), 1)\nelse:\n    result = None",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "q3",
+    "all products",
+    "average"
+  ],
+  "task_id": "challenge_exclude_nulls_avg",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

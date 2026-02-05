@@ -1,0 +1,24 @@
+{
+  "query": "Which region had the highest total sales in 2024? Return the region name and total sales amount. (data in 'sales_data.csv')",
+  "failed_code": "import pandas as pd\n\n# Group by Region and sum the Sales_2024\nregional_sales = data.groupby('Region')['Sales_2024'].sum()\n\n# Find the region with highest sales\nmax_region = regional_sales.idxmax()\nmax_sales = regional_sales.max()\n\n# Store result as a tuple of (region_name, total_sales)\n# Converting to int to avoid numpy types\nresult = (max_region, int(max_sales))",
+  "error_message": "Expected ('North', 320000), got ('South', 460000). Some elements match. Hints: Query mentions time period - ensure you filter by Fiscal Year and/or Fiscal Quarter; Query asks for aggregation - verify you're using the correct aggregation function",
+  "fixed_code": null,
+  "error_type": "sequence_partial_match",
+  "keywords": [
+    "sales",
+    "2024",
+    "total",
+    "highest"
+  ],
+  "task_id": "regional_sales_ranking",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

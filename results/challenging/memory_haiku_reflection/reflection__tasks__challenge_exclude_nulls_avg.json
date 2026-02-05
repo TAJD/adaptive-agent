@@ -1,0 +1,10 @@
+{
+  "learnings": [
+    "Previous attempt scored 0.90 - build on partial success.",
+    "Check rounding and precision.",
+    "Verify the calculation logic.",
+    "Check units and scale of values.",
+    "Fundamentally reconsider the approach.",
+    "Making progress - continue this direction."
+  ]
+}

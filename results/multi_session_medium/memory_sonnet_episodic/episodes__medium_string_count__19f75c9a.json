@@ -1,0 +1,19 @@
+{
+  "query": "How many vowels are in 'hello world'?",
+  "failed_code": "text = 'hello world'\nvowels = 'aeiouAEIOU'\nresult = sum(1 for char in text if char in vowels)",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [],
+  "task_id": "medium_string_count",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

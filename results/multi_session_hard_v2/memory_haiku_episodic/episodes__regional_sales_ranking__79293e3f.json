@@ -1,0 +1,24 @@
+{
+  "query": "Which region had the highest total sales in 2024? Return the region name and total sales amount. (data in 'sales_data.csv')",
+  "failed_code": "# Group by Region and sum the Sales_2024 column\nregion_sales = data.groupby('Region')['Sales_2024'].sum()\n\n# Find the region with the highest total sales\nmax_region = region_sales.idxmax()\nmax_sales = region_sales.max()\n\n# Ensure the sales amount is numeric\nmax_sales = float(max_sales)\n\n# Store result as a dictionary with region name and total sales\nresult = {\n    'region': max_region,\n    'total_sales': max_sales\n}",
+  "error_message": "Expected ('North', 320000), got {'region': 'South', 'total_sales': 460000.0}. Types don't match. Hints: Result type doesn't match expected - check if you need type conversion; If expecting a number, ensure the result is numeric not a string",
+  "fixed_code": null,
+  "error_type": "type_mismatch",
+  "keywords": [
+    "sales",
+    "2024",
+    "total",
+    "highest"
+  ],
+  "task_id": "regional_sales_ranking",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

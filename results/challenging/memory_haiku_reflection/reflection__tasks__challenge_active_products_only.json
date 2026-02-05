@@ -1,0 +1,12 @@
+{
+  "learnings": [
+    "Previous attempt scored 0.50 - build on partial success.",
+    "Check units and scale of values.",
+    "Review the calculation approach.",
+    "Fundamentally reconsider the approach.",
+    "Score unchanged - try a different approach.",
+    "Check for off-by-one errors or missing factors.",
+    "Repeated error: large_numeric_error. Fundamental change needed.",
+    "Making progress - continue this direction."
+  ]
+}

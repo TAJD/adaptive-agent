@@ -1,0 +1,24 @@
+{
+  "query": "What is the total sales amount for all products in 2024? (data is in 'sales_data.csv' with columns Product, Sales_2024, etc.)",
+  "failed_code": "# Calculate the total sales amount for all products in 2024\nresult = data['Sales_2024'].sum()",
+  "error_message": "Expected 1710000, got np.int64(1046000). Types don't match. Hints: Result type doesn't match expected - check if you need type conversion; If expecting a number, ensure the result is numeric not a string",
+  "fixed_code": null,
+  "error_type": "type_mismatch",
+  "keywords": [
+    "sales",
+    "2024",
+    "all products",
+    "total"
+  ],
+  "task_id": "sales_total_2024",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

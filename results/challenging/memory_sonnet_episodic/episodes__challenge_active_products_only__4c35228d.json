@@ -1,0 +1,23 @@
+{
+  "query": "What is the total Q4 sales for products that are NOT discontinued? Return as integer.",
+  "failed_code": "import pandas as pd\n\n# Read the data\ndf = pd.read_csv('data.csv')\n\n# Filter for products that are NOT discontinued and sum Q4 sales\n# Assuming 'Discontinued' column has boolean or 0/1 values\n# and 'Q4_Sales' or similar column exists for Q4 sales\nresult = int(df[df['Discontinued'] == False]['Q4_Sales'].sum())",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "q4",
+    "total"
+  ],
+  "task_id": "challenge_active_products_only",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

@@ -1,0 +1,755 @@
+{
+  "timestamp": "20260120_142211",
+  "config": {
+    "models": [
+      "haiku",
+      "sonnet"
+    ],
+    "strategies": [
+      "none",
+      "reflection",
+      "episodic"
+    ],
+    "num_sessions": 3,
+    "num_tasks": 5,
+    "max_attempts": 3
+  },
+  "results": {
+    "haiku": {
+      "none": {
+        "1": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "reflection": {
+        "1": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "episodic": {
+        "1": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      }
+    },
+    "sonnet": {
+      "none": {
+        "1": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "reflection": {
+        "1": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "episodic": {
+        "1": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 1.0,
+          "avg_attempts": 1.0,
+          "avg_score": 1.0,
+          "task_results": [
+            {
+              "task_id": "medium_std",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_filter_sum",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_percentile",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_string_count",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            },
+            {
+              "task_id": "medium_compound",
+              "passed": true,
+              "attempts": 1,
+              "score": 1.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      }
+    }
+  }
+}

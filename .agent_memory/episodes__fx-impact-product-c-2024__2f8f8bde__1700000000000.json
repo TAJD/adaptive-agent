@@ -1,0 +1,29 @@
+{
+  "query": "What was the total Foreign Exchange Gain/Loss (FX impact) for Product C across ALL countries in fiscal year 2024? This is found in FSLine Statement L2. Return just the numeric value (can be negative).",
+  "failed_code": "# Initial attempt - incorrect filtering\nresult = data[\n    (data['Product'] == 'Product C') &\n    (data['Fiscal Year'] == 2024)\n]['Amount in USD'].sum()\n",
+  "error_message": "Wrong value. Expected 35095.60, got much larger value. Missing FSLine Statement L2 filter.",
+  "fixed_code": "# Correct approach: filter by FSLine Statement L2 for FX impact\nfx_data = data[\n    (data['Product'] == 'Product C') &\n    (data['Fiscal Year'] == 2024) &\n    (data['FSLine Statement L2'] == 'Foreign Exchange Gain/Loss')\n]\nresult = fx_data['Amount in USD'].sum()\n",
+  "error_type": "large_numeric_error",
+  "keywords": [
+    "foreign exchange",
+    "fx",
+    "2024",
+    "year",
+    "product c",
+    "all countries",
+    "total",
+    "count",
+    "change"
+  ],
+  "task_id": "fx-impact-product-c-2024",
+  "timestamp": "1700000000000",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "Added FSLine Statement L2 filter for accurate FX impact calculation",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.7899999999999999,
+  "times_applied": 4,
+  "times_succeeded": 3
+}

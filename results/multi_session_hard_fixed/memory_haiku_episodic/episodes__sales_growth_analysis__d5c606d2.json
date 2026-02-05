@@ -1,0 +1,25 @@
+{
+  "query": "Calculate the year-over-year sales growth percentage for each product. Return as a dictionary with product names as keys and growth percentages as values. (data in 'sales_data.csv')",
+  "failed_code": "import pandas as pd\n\n# Read the sales data\ndf = pd.read_csv('sales_data.csv')\n\n# Ensure we have the necessary columns\nif 'product' in df.columns and 'year' in df.columns and 'sales' in df.columns:\n    # Group by product and year, sum the sales\n    sales_by_product_year = df.groupby(['product', 'year'])['sales'].sum().reset_index()\n    \n    # Get unique years\n    years = sorted(sales_by_product_year['year'].unique())\n    \n    if len(years) >= 2:\n        # Get the last two years for YoY calculation\n        current_year = years[-1]\n        previous_year = years[-2]\n        \n        # Filter data for current and previous year\n        current_year_data = sales_by_product_year[sales_by_product_year['year'] == current_year]\n        previous_year_data = sales_by_product_year[sales_by_product_year['year'] == previous_year]\n        \n        # Create dictionaries for easier lookup\n        current_sales = dict(zip(current_year_data['product'], current_year_data['sales']))\n        previous_sales = dict(zip(previous_year_data['product'], previous_year_data['sales']))\n        \n        # Calculate YoY growth percentage\n        result = {}\n        for product in current_sales.keys():\n            if product in previous_sales and previous_sales[product] != 0:\n                growth = ((current_sales[product] - previous_sales[product]) / previous_sales[product]) * 100\n                result[product] = round(growth, 2)\n            elif product not in previous_sales and previous_sales.get(product, 0) == 0:\n                # Handle case where product didn't exist in previous year\n                result[product] = None\n    else:\n        result = None\nelse:\n    result = None",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "year",
+    "year-over-year",
+    "growth",
+    "percentage"
+  ],
+  "task_id": "sales_growth_analysis",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

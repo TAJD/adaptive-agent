@@ -1,0 +1,9 @@
+{
+  "learnings": [
+    "Ensure the code produces output.",
+    "Check units and scale of values.",
+    "Fundamentally reconsider the approach.",
+    "Score unchanged - try a different approach.",
+    "Check that 'result' variable is set."
+  ]
+}

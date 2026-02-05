@@ -1,0 +1,24 @@
+{
+  "query": "Which region had the highest total sales in 2024? Return the region name and total sales amount. (data in 'sales_data.csv')",
+  "failed_code": "import pandas as pd\n\n# Read the sales data\ndf = pd.read_csv('sales_data.csv')\n\n# Filter for 2024 data (assuming there's a date or year column)\n# Try to identify the date column\nif 'date' in df.columns:\n    df['date'] = pd.to_datetime(df['date'])\n    df_2024 = df[df['date'].dt.year == 2024]\nelif 'year' in df.columns:\n    df_2024 = df[df['year'] == 2024]\nelif 'Date' in df.columns:\n    df['Date'] = pd.to_datetime(df['Date'])\n    df_2024 = df[df['Date'].dt.year == 2024]\nelif 'Year' in df.columns:\n    df_2024 = df[df['Year'] == 2024]\nelse:\n    # If no clear date column, assume all data is from 2024\n    df_2024 = df\n\n# Identify the region and sales columns (case-insensitive)\nregion_col = None\nsales_col = None\n\nfor col in df_2024.columns:\n    col_lower = col.lower()\n    if 'region' in col_lower:\n        region_col = col\n    if 'sales' in col_lower or 'amount' in col_lower or 'revenue' in col_lower:\n        sales_col = col\n\n# Group by region and sum sales\nif region_col and sales_col:\n    region_sales = df_2024.groupby(region_col)[sales_col].sum()\n    \n    # Find the region with highest sales\n    max_region = region_sales.idxmax()\n    max_sales = region_sales.max()\n    \n    result = {'region': max_region, 'total_sales': max_sales}\nelse:\n    result = None",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "2024",
+    "total",
+    "highest"
+  ],
+  "task_id": "regional_sales_ranking",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

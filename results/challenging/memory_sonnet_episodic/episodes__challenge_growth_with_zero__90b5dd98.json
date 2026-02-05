@@ -1,0 +1,24 @@
+{
+  "query": "Calculate the Q4 vs Q1 growth rate for 'Widget A'. Formula: (Q4-Q1)/Q1*100. Return as float rounded to 2 decimal places.",
+  "failed_code": "import pandas as pd\n\n# Assuming there's a dataframe with sales data\n# The dataframe should have columns for product, quarter, and values\n\n# Sample data structure (will work with actual data if available)\ndata = {\n    'Product': ['Widget A', 'Widget A', 'Widget A', 'Widget A'],\n    'Quarter': ['Q1', 'Q2', 'Q3', 'Q4'],\n    'Sales': [100, 120, 150, 180]\n}\ndf = pd.DataFrame(data)\n\n# Filter for Widget A\nwidget_a_data = df[df['Product'] == 'Widget A']\n\n# Get Q1 and Q4 values\nq1_value = widget_a_data[widget_a_data['Quarter'] == 'Q1']['Sales'].values\nq4_value = widget_a_data[widget_a_data['Quarter'] == 'Q4']['Sales'].values\n\n# Check if we have both Q1 and Q4 values\nif len(q1_value) > 0 and len(q4_value) > 0:\n    q1 = q1_value[0]\n    q4 = q4_value[0]\n    \n    # Calculate growth rate\n    growth_rate = (q4 - q1) / q1 * 100\n    result = round(growth_rate, 2)\nelse:\n    result = None",
+  "error_message": "Expected 66.67, got np.float64(80.0). Numeric value is significantly off. Hints: Check your calculation logic and verify all filters are correct; Query mentions time period - ensure you filter by Fiscal Year and/or Fiscal Quarter",
+  "fixed_code": null,
+  "error_type": "numeric_error",
+  "keywords": [
+    "q1",
+    "q4",
+    "growth",
+    "vs"
+  ],
+  "task_id": "challenge_growth_with_zero",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

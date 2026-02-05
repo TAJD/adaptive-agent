@@ -1,0 +1,25 @@
+{
+  "query": "Calculate the year-over-year sales growth percentage for each product. Return as a dictionary with product names as keys and growth percentages as values. (data in 'sales_data.csv')",
+  "failed_code": "import pandas as pd\n\n# Read the sales data\ndf = pd.read_csv('sales_data.csv')\n\n# Ensure date column is in datetime format\nif 'date' in df.columns:\n    df['date'] = pd.to_datetime(df['date'])\nelif 'Date' in df.columns:\n    df['date'] = pd.to_datetime(df['Date'])\n    \n# Extract year from date\ndf['year'] = df['date'].dt.year\n\n# Group by product and year to get total sales per product per year\nyearly_sales = df.groupby(['product', 'year'])['sales'].sum().reset_index()\n\n# Sort by product and year\nyearly_sales = yearly_sales.sort_values(['product', 'year'])\n\n# Calculate year-over-year growth\nyearly_sales['previous_year_sales'] = yearly_sales.groupby('product')['sales'].shift(1)\nyearly_sales['yoy_growth'] = ((yearly_sales['sales'] - yearly_sales['previous_year_sales']) / yearly_sales['previous_year_sales']) * 100\n\n# Get the most recent year's growth for each product\nlatest_growth = yearly_sales.groupby('product').last().reset_index()\n\n# Create result dictionary\nresult = dict(zip(latest_growth['product'], latest_growth['yoy_growth']))\n\n# Remove NaN values (products without previous year data)\nresult = {k: v for k, v in result.items() if pd.notna(v)}",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "year",
+    "year-over-year",
+    "growth",
+    "percentage"
+  ],
+  "task_id": "sales_growth_analysis",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

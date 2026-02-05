@@ -1,0 +1,25 @@
+{
+  "query": "Calculate the year-over-year sales growth percentage for each product. Return as a dictionary with product names as keys and growth percentages as values. (data in 'sales_data.csv')",
+  "failed_code": "import pandas as pd\n\n# Read the CSV file\ndf = pd.read_csv('sales_data.csv')\n\n# Display first few rows to understand structure\nprint(df.head())\nprint(df.columns.tolist())\nprint(df.dtypes)\n\n# Assuming the data has 'product', 'year', and 'sales' columns\n# Adjust column names if they differ\n\n# Group by product and year to get sales totals\nif 'product' in df.columns and 'year' in df.columns and 'sales' in df.columns:\n    # Group by product and year\n    yearly_sales = df.groupby(['product', 'year'])['sales'].sum().reset_index()\n    yearly_sales = yearly_sales.sort_values(['product', 'year'])\n    \n    # Calculate year-over-year growth\n    result = {}\n    \n    for product in yearly_sales['product'].unique():\n        product_data = yearly_sales[yearly_sales['product'] == product].sort_values('year')\n        \n        if len(product_data) >= 2:\n            # Get the last two years of data\n            sales_values = product_data['sales'].values\n            current_year_sales = sales_values[-1]\n            previous_year_sales = sales_values[-2]\n            \n            # Calculate YoY growth percentage\n            if previous_year_sales != 0:\n                growth_percentage = ((current_year_sales - previous_year_sales) / previous_year_sales) * 100\n                result[product] = round(growth_percentage, 2)\n            else:\n                result[product] = None\n        else:\n            result[product] = None\nelse:\n    # If structure is different, try alternative column names\n    result = {}\n    \n    if df.shape[0] > 0:\n        # Try to infer the structure\n        cols = df.columns.tolist()\n        \n        # Look for year/date column\n        year_col = None\n        for col in cols:\n            if 'year' in col.lower() or 'date' in col.lower():\n                year_col = col\n                break\n        \n        # Look for product column\n        product_col = None\n        for col in cols:\n            if 'product' in col.lower() or 'name' in col.lower():\n                product_col = col\n                break\n        \n        # Look for sales column\n        sales_col = None\n        for col in cols:\n            if 'sales' in col.lower() or 'revenue' in col.lower() or 'amount' in col.lower():\n                sales_col = col\n                break\n        \n        if year_col and product_col and sales_col:\n            yearly_sales = df.groupby([product_col, year_col])[sales_col].sum().reset_index()\n            yearly_sales = yearly_sales.sort_values([product_col, year_col])\n            \n            for product in yearly_sales[product_col].unique():\n                product_data = yearly_sales[yearly_sales[product_col] == product].sort_values(year_col)\n                \n                if len(product_data) >= 2:\n                    sales_values = product_data[sales_col].values\n                    current_year_sales = sales_values[-1]\n                    previous_year_sales = sales_values[-2]\n                    \n                    if previous_year_sales != 0:\n                        growth_percentage = ((current_year_sales - previous_year_sales) / previous_year_sales) * 100\n                        result[product] = round(growth_percentage, 2)\n                    else:\n                        result[product] = None\n\nprint(result)",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "year",
+    "year-over-year",
+    "growth",
+    "percentage"
+  ],
+  "task_id": "sales_growth_analysis",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

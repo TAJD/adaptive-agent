@@ -1,0 +1,24 @@
+{
+  "query": "Which region had the highest total sales in 2024? Return the region name and total sales amount. (data in 'sales_data.csv')",
+  "failed_code": "import pandas as pd\n\n# Read the sales data\ndf = pd.read_csv('sales_data.csv')\n\n# Convert date column to datetime if it exists\n# Check for common date column names\ndate_cols = [col for col in df.columns if 'date' in col.lower()]\nif date_cols:\n    df[date_cols[0]] = pd.to_datetime(df[date_cols[0]])\n    date_col = date_cols[0]\nelse:\n    # If no date column found, try to infer it\n    date_col = None\n\n# Filter for 2024 data\nif date_col:\n    df_2024 = df[df[date_col].dt.year == 2024]\nelse:\n    # If no date column, assume all data is 2024 or filter differently\n    df_2024 = df\n\n# Check for sales and region columns\nregion_col = None\nsales_col = None\n\nfor col in df.columns:\n    if 'region' in col.lower():\n        region_col = col\n    if 'sales' in col.lower() or 'amount' in col.lower() or 'revenue' in col.lower():\n        sales_col = col\n\n# If we couldn't find columns, try first two columns\nif not region_col or not sales_col:\n    if len(df.columns) >= 2:\n        region_col = df.columns[0] if not region_col else region_col\n        sales_col = df.columns[1] if not sales_col else sales_col\n\n# Group by region and sum sales\nif region_col and sales_col and len(df_2024) > 0:\n    region_sales = df_2024.groupby(region_col)[sales_col].sum()\n    \n    # Find the region with highest sales\n    highest_region = region_sales.idxmax()\n    highest_sales = region_sales.max()\n    \n    result = {\n        'region': highest_region,\n        'total_sales': highest_sales\n    }\nelse:\n    result = None",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "2024",
+    "total",
+    "highest"
+  ],
+  "task_id": "regional_sales_ranking",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

@@ -1,0 +1,10 @@
+Product,Sales_2023,Sales_2024,Region,Category
+Laptop A,150000,180000,North,Electronics
+Laptop B,120000,140000,North,Electronics
+Phone X,200000,250000,South,Electronics
+Phone Y,180000,210000,South,Electronics
+Tablet Z,80000,95000,East,Electronics
+Monitor Pro,60000,75000,East,Electronics
+Keyboard Q,25000,30000,West,Accessories
+Mouse R,15000,18000,West,Accessories
+Headphones S,40000,48000,West,Audio

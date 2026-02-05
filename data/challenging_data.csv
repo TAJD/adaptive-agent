@@ -1,0 +1,11 @@
+Product,Q1_Sales,Q2_Sales,Q3_Sales,Q4_Sales,Returns,Category,Launch_Date,Discontinued
+Widget A,15000,18000,22000,25000,1200,Electronics,2022-01-15,False
+Widget B,0,5000,8000,12000,500,Electronics,2023-04-01,False
+Widget C,30000,28000,25000,20000,3500,Electronics,2020-06-10,True
+Gadget X,10000,10000,10000,10000,0,Accessories,2021-03-20,False
+Gadget Y,,12000,15000,18000,800,Accessories,2023-07-15,False
+Gadget Z,8000,9000,,11000,200,Accessories,2022-09-01,False
+Service A,50000,55000,60000,65000,,Services,2019-01-01,False
+Service B,20000,0,25000,30000,0,Services,2021-11-10,False
+Legacy P,5000,4000,3000,2000,1500,Legacy,2015-02-28,True
+New Item,,,5000,8000,100,Electronics,2024-06-01,False

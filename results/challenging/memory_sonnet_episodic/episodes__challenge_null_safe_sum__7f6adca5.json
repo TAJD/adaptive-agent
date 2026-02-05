@@ -1,0 +1,23 @@
+{
+  "query": "Calculate the total Q1 sales, treating missing values as 0. Return as integer.",
+  "failed_code": "import pandas as pd\n\n# Read the data\ndf = pd.read_csv('data.csv')\n\n# Calculate total Q1 sales, treating missing values as 0\n# Q1 typically includes January, February, March\n# Assuming columns might be named like 'Q1', 'Q1_sales', or monthly columns\n\n# Check what columns exist\nif 'Q1' in df.columns:\n    result = int(df['Q1'].fillna(0).sum())\nelif 'Q1_sales' in df.columns:\n    result = int(df['Q1_sales'].fillna(0).sum())\nelif 'Q1 Sales' in df.columns:\n    result = int(df['Q1 Sales'].fillna(0).sum())\nelse:\n    # Try to find January, February, March columns\n    q1_months = []\n    for col in df.columns:\n        col_lower = col.lower()\n        if any(month in col_lower for month in ['january', 'jan', 'february', 'feb', 'march', 'mar']):\n            q1_months.append(col)\n    \n    if q1_months:\n        result = int(df[q1_months].fillna(0).sum().sum())\n    else:\n        # If no specific columns found, sum all numeric columns as fallback\n        result = int(df.select_dtypes(include=['number']).fillna(0).sum().sum())",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "q1",
+    "total"
+  ],
+  "task_id": "challenge_null_safe_sum",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

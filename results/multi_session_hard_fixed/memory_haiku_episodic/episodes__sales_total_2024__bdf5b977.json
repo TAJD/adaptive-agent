@@ -1,0 +1,24 @@
+{
+  "query": "What is the total sales amount for all products in 2024? (data is in 'sales_data.csv' with columns Product, Sales_2024, etc.)",
+  "failed_code": "import pandas as pd\n\n# Read the sales data\ndf = pd.read_csv('sales_data.csv')\n\n# Calculate total sales amount for all products in 2024\nresult = df['Sales_2024'].sum()",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "2024",
+    "all products",
+    "total"
+  ],
+  "task_id": "sales_total_2024",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

@@ -1,0 +1,11 @@
+{
+  "learnings": [
+    "Score decreased - reconsider last changes.",
+    "Previous attempt scored 0.50 - build on partial success.",
+    "Ensure the code produces output.",
+    "Review the calculation approach.",
+    "Check for off-by-one errors or missing factors.",
+    "Making progress - continue this direction.",
+    "Check that 'result' variable is set."
+  ]
+}

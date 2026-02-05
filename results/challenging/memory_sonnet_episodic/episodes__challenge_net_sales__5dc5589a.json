@@ -1,0 +1,24 @@
+{
+  "query": "Calculate the net annual sales (sum of all quarters minus returns) for 'Service A'. Note: if returns is missing, treat as 0. Return as integer.",
+  "failed_code": "import pandas as pd\n\n# Read the data\ndf = pd.read_csv('data.csv')\n\n# Filter for 'Service A'\nservice_a_df = df[df['Service'] == 'Service A']\n\n# Fill missing returns with 0\nservice_a_df = service_a_df.copy()\nservice_a_df['Returns'] = service_a_df['Returns'].fillna(0)\n\n# Calculate net annual sales (sum of all quarters minus returns)\ntotal_sales = service_a_df['Q1'].fillna(0).sum() + \\\n              service_a_df['Q2'].fillna(0).sum() + \\\n              service_a_df['Q3'].fillna(0).sum() + \\\n              service_a_df['Q4'].fillna(0).sum()\n\ntotal_returns = service_a_df['Returns'].sum()\n\nresult = int(total_sales - total_returns)",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "quarter",
+    "sum",
+    "min"
+  ],
+  "task_id": "challenge_net_sales",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}

@@ -1,0 +1,875 @@
+{
+  "timestamp": "20260120_132835",
+  "config": {
+    "models": [
+      "haiku",
+      "sonnet"
+    ],
+    "strategies": [
+      "none",
+      "reflection",
+      "episodic"
+    ],
+    "num_sessions": 5,
+    "num_tasks": 3,
+    "max_attempts": 3
+  },
+  "results": {
+    "haiku": {
+      "none": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "reflection": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "episodic": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 3,
+          "episodes_created": 3
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 3,
+          "episodes_at_end": 3,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 3,
+          "episodes_at_end": 3,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 3,
+          "episodes_at_end": 3,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 3,
+          "episodes_at_end": 3,
+          "episodes_created": 0
+        }
+      }
+    },
+    "sonnet": {
+      "none": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "reflection": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 0,
+          "episodes_created": 0
+        }
+      },
+      "episodic": {
+        "1": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 0,
+          "episodes_at_end": 3,
+          "episodes_created": 3
+        },
+        "2": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 3,
+          "episodes_at_end": 3,
+          "episodes_created": 0
+        },
+        "3": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 3,
+          "episodes_at_end": 3,
+          "episodes_created": 0
+        },
+        "4": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 3,
+          "episodes_at_end": 3,
+          "episodes_created": 0
+        },
+        "5": {
+          "pass_rate": 0.0,
+          "avg_attempts": 3.0,
+          "avg_score": 0.0,
+          "task_results": [
+            {
+              "task_id": "sales_total_2024",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "sales_growth_analysis",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            },
+            {
+              "task_id": "regional_sales_ranking",
+              "passed": false,
+              "attempts": 3,
+              "score": 0.0
+            }
+          ],
+          "episodes_at_start": 3,
+          "episodes_at_end": 3,
+          "episodes_created": 0
+        }
+      }
+    }
+  }
+}

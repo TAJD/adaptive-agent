@@ -1,0 +1,10 @@
+{
+  "learnings": [
+    "Check for off-by-one errors or missing factors.",
+    "Check the expected output type.",
+    "Review the calculation approach.",
+    "Ensure numeric results are numbers, not strings.",
+    "Previous attempt scored 0.50 - build on partial success.",
+    "Making progress - continue this direction."
+  ]
+}

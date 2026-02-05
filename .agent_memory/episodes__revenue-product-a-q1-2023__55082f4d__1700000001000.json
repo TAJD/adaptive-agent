@@ -1,0 +1,26 @@
+{
+  "query": "What was the total Gross Revenue for Product A in Q1 2023?",
+  "failed_code": "# Initial attempt - missing specific line item filter\nresult = data[\n    (data['Product'] == 'Product A') &\n    (data['Fiscal Quarter'] == 'Q1') &\n    (data['Fiscal Year'] == 2023)\n]['Amount in USD'].sum()\n",
+  "error_message": "Wrong value. Missing FSLine Statement L2 filter - summed all line items instead of just Gross Revenue.",
+  "fixed_code": "# Correct: filter by FSLine Statement L2 = 'Gross Revenue'\nrevenue_data = data[\n    (data['Product'] == 'Product A') &\n    (data['Fiscal Quarter'] == 'Q1') &\n    (data['Fiscal Year'] == 2023) &\n    (data['FSLine Statement L2'] == 'Gross Revenue')\n]\nresult = revenue_data['Amount in USD'].sum()\n",
+  "error_type": "much_larger",
+  "keywords": [
+    "revenue",
+    "gross revenue",
+    "q1",
+    "2023",
+    "product a",
+    "total"
+  ],
+  "task_id": "revenue-product-a-q1-2023",
+  "timestamp": "1700000001000",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "Added FSLine Statement L2 filter for specific revenue calculation",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.8,
+  "times_applied": 5,
+  "times_succeeded": 4
+}

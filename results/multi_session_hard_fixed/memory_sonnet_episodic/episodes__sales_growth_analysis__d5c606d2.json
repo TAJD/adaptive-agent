@@ -1,0 +1,25 @@
+{
+  "query": "Calculate the year-over-year sales growth percentage for each product. Return as a dictionary with product names as keys and growth percentages as values. (data in 'sales_data.csv')",
+  "failed_code": "import pandas as pd\n\n# Read the sales data\ndf = pd.read_csv('sales_data.csv')\n\n# Ensure date column is in datetime format\nif 'date' in df.columns:\n    df['date'] = pd.to_datetime(df['date'])\nelif 'Date' in df.columns:\n    df['date'] = pd.to_datetime(df['Date'])\n    \n# Extract year from date\ndf['year'] = df['date'].dt.year\n\n# Group by product and year to get total sales per product per year\nif 'product' in df.columns:\n    product_col = 'product'\nelif 'Product' in df.columns:\n    product_col = 'Product'\nelse:\n    product_col = df.columns[0]  # Fallback to first column\n\nif 'sales' in df.columns:\n    sales_col = 'sales'\nelif 'Sales' in df.columns:\n    sales_col = 'Sales'\nelse:\n    sales_col = df.columns[-1]  # Fallback to last column\n\nyearly_sales = df.groupby([product_col, 'year'])[sales_col].sum().reset_index()\n\n# Calculate year-over-year growth for each product\nresult = {}\n\nfor product in yearly_sales[product_col].unique():\n    product_data = yearly_sales[yearly_sales[product_col] == product].sort_values('year')\n    \n    if len(product_data) >= 2:\n        # Get the most recent year and previous year\n        recent_year = product_data.iloc[-1]\n        previous_year = product_data.iloc[-2]\n        \n        # Calculate growth percentage\n        if previous_year[sales_col] != 0:\n            growth = ((recent_year[sales_col] - previous_year[sales_col]) / previous_year[sales_col]) * 100\n            result[product] = round(growth, 2)\n        else:\n            result[product] = 0.0\n    else:\n        result[product] = 0.0",
+  "error_message": "No output was produced. Hints: Result is None - check if 'result' variable is assigned; Verify your filter returns rows (df may be empty after filtering)",
+  "fixed_code": null,
+  "error_type": "no_output",
+  "keywords": [
+    "sales",
+    "year",
+    "year-over-year",
+    "growth",
+    "percentage"
+  ],
+  "task_id": "sales_growth_analysis",
+  "timestamp": "",
+  "version": "1.0",
+  "parent_version": null,
+  "change_description": "",
+  "author": "",
+  "tags": [],
+  "metadata": {},
+  "effectiveness_score": 0.0,
+  "times_applied": 0,
+  "times_succeeded": 0
+}
